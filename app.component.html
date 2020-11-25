@@ -9,10 +9,10 @@
         <li routerLinkActive="active"><a routerLink="/posts">Posts</a></li>
         <li routerLinkActive="active"><a [routerLink]="['/about']">About</a></li>
         <li>
-            <button class="btn">Login</button>
+            <button (click)="auth.login()" class="btn">Login</button>
         </li>
         <li>
-            <button class="btn">Logout</button>
+            <button (click)="auth.logout()" class="btn">Logout</button>
         </li>
     </ul>
 </nav>
